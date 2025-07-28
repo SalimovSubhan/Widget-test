@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:widget_test/login_form.dart';
+import 'package:widget_test/pages/login_form.dart';
 
 void main() {
   testWidgets('Показывает приветствие после ввода текста', (

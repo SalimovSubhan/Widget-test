@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:widget_test/counter_widget.dart';
+import 'package:widget_test/pages/counter_widget.dart';
 
 void main() {
   testWidgets('Кнопка увеличивает счетчик', (WidgetTester tester) async {
