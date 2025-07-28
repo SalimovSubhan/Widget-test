@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
         children: [
           SizedBox(width: double.infinity),
           ElevatedButton(
+            key: Key('counter'),
             onPressed: () {
               Navigator.push(
                 context,
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
             child: Text('counter'),
           ),
           ElevatedButton(
+            key: Key('login_form'),
             onPressed: () {
               Navigator.push(
                 context,
@@ -38,6 +40,7 @@ class MyApp extends StatelessWidget {
             child: Text('login form'),
           ),
           ElevatedButton(
+            key: Key('list'),
             onPressed: () {
               Navigator.push(
                 context,
