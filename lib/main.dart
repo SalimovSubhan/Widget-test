@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:widget_test/pages/counter_widget.dart';
-import 'package:widget_test/pages/login_form.dart';
-import 'package:widget_test/pages/scrollable_list.dart';
+import 'package:widget_test/router/router.dart';
 
 void main() {
-  runApp(MaterialApp(home: const MyApp()));
+  runApp(MaterialApp(routes: router, initialRoute: '/'));
 }
 
 class MyApp extends StatelessWidget {
@@ -22,32 +20,30 @@ class MyApp extends StatelessWidget {
           ElevatedButton(
             key: Key('counter'),
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => CounterWidget()),
-              );
+              Navigator.pushNamed(context, '/counter');
             },
             child: Text('counter'),
           ),
           ElevatedButton(
             key: Key('login_form'),
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => LoginForm()),
-              );
+              Navigator.pushNamed(context, '/login');
             },
             child: Text('login form'),
           ),
           ElevatedButton(
             key: Key('list'),
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => ScrollableList()),
-              );
+              Navigator.pushNamed(context, '/scrol');
             },
             child: Text('list'),
+          ),
+          ElevatedButton(
+            key: Key('friest_screen'),
+            onPressed: () {
+              Navigator.pushNamed(context, '/friest');
+            },
+            child: Text('FriestScreen'),
           ),
         ],
       ),
